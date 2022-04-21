@@ -96,15 +96,15 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    /*
+    
     TreeNode *aux = tree->root;
     if (aux == NULL) return NULL;
   
-    while (aux != NULL){
+    while (aux->left!= NULL){
         aux = aux->left;
     }
     return aux->pair;
-  */
+  
   return NULL;
 }
 
