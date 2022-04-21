@@ -72,3 +72,21 @@ Thu Apr 21 15:58:52 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 819b7c0
+Thu Apr 21 16:02:46 UTC 2022: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:29: error: ‘return’ with a value, in function returning void [-Werror]
+     if (aux == NULL) return NULL;
+                             ^~~~
+treemap.c:48:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:113:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+89b7184
