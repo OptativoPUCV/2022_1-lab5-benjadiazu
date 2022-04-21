@@ -120,3 +120,14 @@ treemap.c:51:15: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 c0260d2
+Thu Apr 21 16:06:04 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:15: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+     TreeNode *nuevoNodo = createTreeNode(key,value);
+               ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3013e33
