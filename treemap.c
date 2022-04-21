@@ -100,7 +100,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     if (aux == NULL) return NULL;
   
     while (aux != NULL){
-        aux = aux->left->left;
+        aux = aux->left;
     }
     return aux->pair;
 }
