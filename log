@@ -106,3 +106,17 @@ Thu Apr 21 16:03:21 UTC 2022:
  1 file changed, 1 insertion(+)
  tests:  0|0
 3df9d8a
+Thu Apr 21 16:05:54 UTC 2022: 
+ treemap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:19: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     tree->current = searchTreeMap(key,value);
+                   ^
+treemap.c:51:15: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+     TreeNode *nuevoNodo = createTreeNode(key,value);
+               ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c0260d2
