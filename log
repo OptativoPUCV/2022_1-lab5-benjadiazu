@@ -147,3 +147,14 @@ treemap.c:50:17: error: ‘padre’ is used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 161a3b0
+Thu Apr 21 16:07:53 UTC 2022: 
+ treemap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:17: error: ‘padre’ is used uninitialized in this function [-Werror=uninitialized]
+     padre->pair = searchTreeMap(key,value);
+     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1367dd0
