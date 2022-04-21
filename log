@@ -136,3 +136,14 @@ Thu Apr 21 16:06:10 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 4169655
+Thu Apr 21 16:07:23 UTC 2022: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:17: error: ‘padre’ is used uninitialized in this function [-Werror=uninitialized]
+     padre->pair = searchTreeMap(key,value);
+     ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+161a3b0
