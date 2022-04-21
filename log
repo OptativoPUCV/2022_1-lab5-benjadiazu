@@ -158,3 +158,8 @@ treemap.c:50:17: error: ‘padre’ is used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 1367dd0
+Thu Apr 21 16:08:24 UTC 2022: 
+ treemap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+eed68bb
