@@ -327,3 +327,9 @@ treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 3c61084
+Fri Apr 22 23:49:41 UTC 2022: 
+ treemap.c | 17 -----------------
+ 1 file changed, 17 deletions(-)
+ tests:  13|5
+total_score: 20/70
+75a18d7
