@@ -249,3 +249,17 @@ treemap.c:50:17: error: ‘padre’ is used uninitialized in this function [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 7be8768
+Fri Apr 22 23:34:29 UTC 2022: 
+ treemap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:55:1: error: expected ‘(’ before ‘}’ token
+ }
+ ^
+treemap.c:52:15: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+     TreeNode *nuevoNodo = createTreeNode(key,value);
+               ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fa8f840
