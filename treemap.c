@@ -55,17 +55,16 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     TreeNode *nuevoNodo = createTreeNode(key,value);
   
     if(aux != NULL){
-        if(tree->lower_than(key,par->key) == 1){
+        if(tree->lower_than(key,aux->pair->key) == 1){
             aux->left = nuevoNodo;
             nuevoNodo->parent = aux;
         }
-        else if (tree->lower_than(key,par->key) == 1){
+        else if (tree->lower_than(key,aux->pair->key) == 1){
             aux->right = nuevoNodo;
             nuevoNodo->parent = aux;
         }
       }
       else{
-          printf("hola\n");
           tree->root = nuevoNodo;
       }
     
