@@ -83,8 +83,6 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode *minimo;
     TreeNode *subArbol;
     borrar = node;
-    //searchTreeMap(tree,node->pair->key);
-
     if (borrar != NULL){
         //caso sin hijos
         if (borrar->left == NULL && borrar->right == NULL){
