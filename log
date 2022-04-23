@@ -434,3 +434,20 @@ treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 b0c73ec
+Sat Apr 23 13:37:24 UTC 2022: 
+ treemap.c | 17 ++++++++---------
+ 1 file changed, 8 insertions(+), 9 deletions(-)
+test.c: In function ‘insertTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8269fa5
