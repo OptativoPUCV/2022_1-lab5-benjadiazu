@@ -181,9 +181,11 @@ Pair * nextTreeMap(TreeMap * tree) {
         return tree->current->pair;
     }
     else{
-        while (tree->current->parent->pair->key < tree->current->pair->key){
-            tree->current = tree->current->parent;
+        if (tree->current->parent != NULL){
+            while (tree->current->parent->pair->key < tree->current->pair->key){
+                tree->current = tree->current->parent;
+            }
+            return tree->current->pair;
         }
-        return tree->current->pair;
     }
 }
