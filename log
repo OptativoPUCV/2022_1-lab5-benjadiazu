@@ -451,3 +451,14 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 8269fa5
+Sat Apr 23 13:45:19 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+     aux->pair = searchTreeMap(tree,key);
+     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a0d8813
