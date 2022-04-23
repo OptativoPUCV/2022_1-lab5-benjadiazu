@@ -531,3 +531,9 @@ treemap.c:50:11: error: unused variable ‘p’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5e5f9b0
+Sat Apr 23 14:09:50 UTC 2022: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  15|4
+total_score: 30/70
+0bd50a6
