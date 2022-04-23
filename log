@@ -791,3 +791,14 @@ Sat Apr 23 16:54:15 UTC 2022:
  tests:  23|2
 total_score: 50/70
 196cfe7
+Sat Apr 23 17:01:47 UTC 2022: 
+ treemap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘nextTreeMap’:
+treemap.c:180:6: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+   aux->pair->key = tree->current->pair->key;
+   ~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6e33013
