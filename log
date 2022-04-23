@@ -379,3 +379,14 @@ Sat Apr 23 00:18:29 UTC 2022:
  tests:  13|5
 total_score: 20/70
 b24692b
+Sat Apr 23 03:35:34 UTC 2022: 
+ treemap.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:4:0:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+     aux->pair = searchTreeMap(tree,key);
+     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aa26c0c
