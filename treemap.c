@@ -182,9 +182,9 @@ Pair * nextTreeMap(TreeMap * tree) {
             return tree->current->pair;
         }
         else{
-            while (tree->lower_than(tree->current->pair->key,tree->current->parent->pair->key) == 1 ){
-                tree->current = tree->current->parent;
-            }
+            do{
+              tree->current = tree->current->parent;
+            }while (tree->lower_than(tree->current->pair->key,tree->current->parent->pair->key) == 1 );
             return tree->current->pair;
         }
     }
