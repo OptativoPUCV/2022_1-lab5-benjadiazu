@@ -517,3 +517,17 @@ Sat Apr 23 14:09:03 UTC 2022:
  tests:  15|4
 total_score: 30/70
 921383e
+Sat Apr 23 14:09:40 UTC 2022: 
+ treemap.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:52:5: error: expected ‘;’ before ‘aux’
+     aux = tree->current;
+     ^~~
+treemap.c:50:11: error: unused variable ‘p’ [-Werror=unused-variable]
+     Pair* p;
+           ^
+cc1: all warnings being treated as errors
+Compilation failed
+5e5f9b0
