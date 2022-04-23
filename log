@@ -489,3 +489,13 @@ Sat Apr 23 14:00:40 UTC 2022:
  tests:  14|5
 total_score: 20/70
 de0776c
+Sat Apr 23 14:03:14 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:52:5: error: expected ‘;’ before ‘aux’
+     aux = tree->current;
+     ^~~
+Compilation failed
+af333ac
