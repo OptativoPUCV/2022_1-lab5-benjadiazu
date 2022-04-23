@@ -65,6 +65,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
         }
       }
       else{
+          printf("hola\n");
           tree->root = nuevoNodo;
       }
     
