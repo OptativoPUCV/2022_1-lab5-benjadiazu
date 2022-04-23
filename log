@@ -412,3 +412,14 @@ treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werro
 cc1: all warnings being treated as errors
 Compilation failed
 ab46907
+Sat Apr 23 13:34:14 UTC 2022: 
+ treemap.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:4:0:
+test.c: In function ‘insertTreeMap’:
+treemap.c:50:15: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+     aux->pair = searchTreeMap(tree,key);
+     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a938fd3
