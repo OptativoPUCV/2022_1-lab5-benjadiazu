@@ -183,7 +183,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     else{
         while (tree->current != NULL){
-            if (tree->lower_than(aux->pair->key,tree->current->parent->pair->key) == 1){
+            if (tree->lower_than(aux->parent->pair->key,tree->current->parent->pair->key) == 1){
                 tree->current = tree->current->parent;
             }
             else{
