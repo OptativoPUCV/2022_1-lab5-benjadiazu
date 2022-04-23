@@ -170,13 +170,14 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }
     else{
         aux = tree->current;
-        UB = tree->current;
+        UB = aux;
         while (aux->parent != NULL){
             aux = aux->parent;
             if (tree->lower_than(UB->pair->key,aux->pair->key) == 1){
                 UB = aux;
                 return UB->pair;
             }
+            
         }
     }
   
