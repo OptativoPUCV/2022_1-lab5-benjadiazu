@@ -1003,3 +1003,31 @@ treemap.c:188:31: error: stray ‘\235’ in program
                                ^
 Compilation failed
 5f3fa64
+Sat Apr 23 17:52:20 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:188:24: error: stray ‘\342’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                        ^
+treemap.c:188:25: error: stray ‘\200’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                         ^
+treemap.c:188:26: error: stray ‘\234’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                          ^
+treemap.c:188:27: error: expected expression before ‘%’ token
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                           ^
+treemap.c:188:29: error: stray ‘\342’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                             ^
+treemap.c:188:30: error: stray ‘\200’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                              ^
+treemap.c:188:31: error: stray ‘\235’ in program
+                 printf(“%d”,(int*)aux->parent->pair->key);
+                               ^
+Compilation failed
+9443c7b
