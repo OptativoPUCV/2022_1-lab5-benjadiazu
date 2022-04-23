@@ -1178,3 +1178,8 @@ treemap.c:166:15: error: ‘aux’ is used uninitialized in this function [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 f88188e
+Sat Apr 23 18:47:20 UTC 2022: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+c897f99
