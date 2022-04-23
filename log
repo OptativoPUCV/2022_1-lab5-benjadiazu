@@ -483,3 +483,9 @@ treemap.c:49:11: error: variable ‘par’ set but not used [-Werror=unused-but-
 cc1: all warnings being treated as errors
 Compilation failed
 90e5802
+Sat Apr 23 14:00:40 UTC 2022: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  14|5
+total_score: 20/70
+de0776c
