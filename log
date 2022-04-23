@@ -1167,3 +1167,14 @@ Sat Apr 23 18:45:49 UTC 2022:
  1 file changed, 2 deletions(-)
  tests:  0|0
 1c5fdfb
+Sat Apr 23 18:47:16 UTC 2022: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+test.c: In function ‘upperBound’:
+treemap.c:166:15: error: ‘aux’ is used uninitialized in this function [-Werror=uninitialized]
+     aux->pair = searchTreeMap(tree,key);
+     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f88188e
