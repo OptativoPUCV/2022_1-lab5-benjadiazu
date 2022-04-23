@@ -499,3 +499,9 @@ treemap.c:52:5: error: expected ‘;’ before ‘aux’
      ^~~
 Compilation failed
 af333ac
+Sat Apr 23 14:03:19 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  14|5
+total_score: 20/70
+cb60ac3
