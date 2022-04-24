@@ -180,9 +180,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
             return UB->pair;
         }
     }
-    //return UB->pair;
-  
-    return NULL;
+    UB = auxUB;
+    return UB->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
