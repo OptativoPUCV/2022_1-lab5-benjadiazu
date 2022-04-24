@@ -164,8 +164,6 @@ Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *UB = tree->root;
     TreeNode *auxUB = tree->root;
     while (UB != NULL){
-        printf("UB: %d\n", *(int*)UB->pair->key );
-        printf("aux: %d\n", *(int*)auxUB->pair->key );
         if (tree->lower_than(key,UB->pair->key) == 1){
             auxUB = UB;
             UB = UB->left;
@@ -177,6 +175,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
         else{
             return UB->pair;
         }
+        printf("UB: %d\n", *(int*)UB->pair->key );
+        printf("aux: %d\n", *(int*)auxUB->pair->key );
     }
     //return UB->pair;
   
