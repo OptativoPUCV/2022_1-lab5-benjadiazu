@@ -2125,3 +2125,18 @@ Sun Apr 24 06:15:17 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2911ae6
+Sun Apr 24 06:15:43 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:174:22: error: expected identifier before ‘!=’ token
+             if (UB-> != NULL)rightprintf("key: %d\n", *(int*)UB->pair->key );
+                      ^~
+treemap.c:174:30: error: implicit declaration of function ‘rightprintf’; did you mean ‘dprintf’? [-Werror=implicit-function-declaration]
+             if (UB-> != NULL)rightprintf("key: %d\n", *(int*)UB->pair->key );
+                              ^~~~~~~~~~~
+                              dprintf
+cc1: all warnings being treated as errors
+Compilation failed
+bc28a92
