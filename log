@@ -1356,3 +1356,14 @@ treemap.c:181:5: error: expected expression before ‘}’ token
      ^
 Compilation failed
 864fa13
+Sun Apr 24 00:59:52 UTC 2022: 
+ treemap.c | 15 +++------------
+ 1 file changed, 3 insertions(+), 12 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:165:15: error: unused variable ‘UB’ [-Werror=unused-variable]
+     TreeNode *UB;
+               ^~
+cc1: all warnings being treated as errors
+Compilation failed
+bedd4f7
