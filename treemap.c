@@ -173,7 +173,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             printf("key: %d\n", *(int*)aux->pair->key );
             return UB->pair;
         }
-        else{
+        else if (is_equal(tree,UB->pair->key,aux->pair->key){
             return aux->pair;
         }
         UB = aux;
