@@ -162,12 +162,13 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *aux;
-  
+    TreeNode *UB;
     searchTreeMap(tree,key);
 
     aux = tree->current;
+    UB = aux;
     printf("key: %d\n", *(int*)aux->pair->key );
-  
+    if (tree->lower_than(UB->pair->key,aux->parent->pair->key) == 1)
 
     return NULL;
 }
