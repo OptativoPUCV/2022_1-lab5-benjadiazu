@@ -1264,3 +1264,9 @@ treemap.c:169:8: error: too many arguments to function ‘tree->lower_than’
         ^~~~
 Compilation failed
 3a155e7
+Sun Apr 24 00:13:48 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  25|1
+total_score: 60/70
+67d8e70
