@@ -173,7 +173,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             UB = aux;
             return UB->pair;
         }
-        else if (is_equal(tree,UB->pair->key,aux->parent->pair->key)){
+        else if (is_equal(tree,UB->pair->key,key)){
               return UB->pair;
         }
         
