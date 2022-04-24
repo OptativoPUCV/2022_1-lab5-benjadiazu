@@ -163,16 +163,18 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *aux;
     TreeNode *UB;
+  
     searchTreeMap(tree,key);
     UB = tree->current;
     aux = tree->current->parent;
+  
     while (UB != NULL){
+        aux = aux->parent;
         if(tree->lower_than(UB->pair->key,aux->pair->key) == 1){
             printf("key: %d\n", *(int*)UB->pair->key );
             return UB->pair;
         }
         else{
-            
             return aux->pair;
         }
         UB = aux;
