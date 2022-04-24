@@ -166,19 +166,20 @@ Pair * upperBound(TreeMap * tree, void* key) {
   
     while (UB != NULL){
         
-      
+            printf("UB: %d\n", *(int*)UB->pair->key );
+            printf("aux: %d\n\n", *(int*)auxUB->pair->key );
         if (tree->lower_than(key,UB->pair->key) == 1){
+            printf("CUANDO EL UB ES MAS GRANDE\n");
             auxUB = UB;
             UB = UB->left; 
         }
         else if (tree->lower_than(UB->pair->key,key) == 1){
-            printf("UB: %d\n", *(int*)UB->pair->key );
-            printf("aux: %d\n\n", *(int*)auxUB->pair->key );
+            printf("CUANDO EL UB ES MAS CHICO\n");
             auxUB = UB;
             UB = UB->right; 
         }
         else{
-            printf("SE METE AQUI!\n");
+            printf("SE METE AQUI CUANDO ES IGUAL!\n");
             return UB->pair;
         }
     }
