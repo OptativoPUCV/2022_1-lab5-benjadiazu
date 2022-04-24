@@ -165,7 +165,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   
     searchTreeMap(tree,key);
 
-    aux = tree->current->parent;
+    aux = tree->current;
     printf("key: %d\n", *(int*)aux->pair->key );
   
 
