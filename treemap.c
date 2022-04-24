@@ -166,14 +166,16 @@ Pair * upperBound(TreeMap * tree, void* key) {
     searchTreeMap(tree,key);
     UB = tree->current;
     aux = tree->current->parent;
-    if(tree->lower_than(UB->pair->key,aux->pair->key) == 1){
+    while (UB != NULL){
+        if(tree->lower_than(UB->pair->key,aux->pair->key) == 1){
+            printf("key: %d\n", *(int*)UB->pair->key );
+            return UB->pair;
+        }
+        else{
+            
+            return aux->pair;
+        }
         UB = aux;
-        printf("key: %d\n", *(int*)UB->pair->key );
-        return UB->pair;
-    }
-    else{
-        
-        return aux->pair;
     }
     return NULL;
 }
