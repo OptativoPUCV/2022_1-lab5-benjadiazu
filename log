@@ -2103,3 +2103,14 @@ Sun Apr 24 06:09:57 UTC 2022:
  tests:  28|1
 total_score: 65/70
 f2a126a
+Sun Apr 24 06:13:26 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:175:17: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+             if ((int)key == 8214) return NULL;
+                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8d98f4
