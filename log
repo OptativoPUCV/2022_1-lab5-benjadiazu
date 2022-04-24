@@ -2152,3 +2152,8 @@ treemap.c:174:35: error: implicit declaration of function ‘rightprintf’; did
 cc1: all warnings being treated as errors
 Compilation failed
 46e7b0c
+Sun Apr 24 06:16:02 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+ec3a36d
