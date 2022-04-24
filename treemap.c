@@ -163,6 +163,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *UB = tree->root;
     TreeNode *auxUB = tree->root;
+  
     while (UB != NULL){
         printf("UB: %d\n", *(int*)UB->pair->key );
         printf("aux: %d\n\n", *(int*)auxUB->pair->key );
@@ -179,7 +180,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             return UB->pair;
         }
     }
-    //return UB->pair;
+    return UB->pair;
   
     return NULL;
 }
