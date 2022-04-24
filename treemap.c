@@ -178,6 +178,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             UB = UB->right; 
         }
         else{
+            printf("SE METE AQUI!\n");
             return UB->pair;
         }
     }
