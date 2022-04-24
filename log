@@ -2193,3 +2193,23 @@ treemap.c:169:12: error: suggest parentheses around assignment used as truth val
 cc1: all warnings being treated as errors
 Compilation failed
 688c3de
+Sun Apr 24 15:58:01 UTC 2022: 
+ treemap.c | 11 ++---------
+ 1 file changed, 2 insertions(+), 9 deletions(-)
+test.c: In function ‘upperBound’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+773be3e
