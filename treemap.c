@@ -162,7 +162,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) {
     TreeNode *aux;
-    TreeNode *UB;
   
     searchTreeMap(tree,key);
 
