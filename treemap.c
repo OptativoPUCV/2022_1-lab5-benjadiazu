@@ -177,6 +177,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
             printf("key: %d\n", *(int*)UB->pair->key );
             return UB->pair;
         }
+        printf("key: %d\n", *(int*)aux->pair->key );
         aux = aux->parent;
       }
     }
