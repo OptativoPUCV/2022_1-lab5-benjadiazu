@@ -1646,3 +1646,20 @@ Sun Apr 24 02:38:10 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9f9e4b8
+Sun Apr 24 02:43:43 UTC 2022: 
+ treemap.c | 14 --------------
+ 1 file changed, 14 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:165:15: error: variable ‘UB’ set but not used [-Werror=unused-but-set-variable]
+     TreeNode *UB;
+               ^~
+treemap.c:164:15: error: variable ‘aux’ set but not used [-Werror=unused-but-set-variable]
+     TreeNode *aux;
+               ^~~
+treemap.c:171:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+65bad75
