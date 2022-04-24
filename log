@@ -1761,3 +1761,14 @@ treemap.c:165:15: error: variable ‘auxUB’ set but not used [-Werror=unused-b
 cc1: all warnings being treated as errors
 Compilation failed
 995917e
+Sun Apr 24 03:23:25 UTC 2022: 
+ treemap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:165:15: error: variable ‘auxUB’ set but not used [-Werror=unused-but-set-variable]
+     TreeNode *auxUB = tree->root;
+               ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+770168f
