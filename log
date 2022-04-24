@@ -1472,3 +1472,14 @@ Sun Apr 24 01:25:24 UTC 2022:
  1 file changed, 12 insertions(+), 1 deletion(-)
  tests:  0|0
 8e6c3ac
+Sun Apr 24 01:26:02 UTC 2022: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:174:36: error: ‘nodo’ undeclared (first use in this function)
+         printf("key: %d\n", *(int*)nodo->pair->key );
+                                    ^~~~
+treemap.c:174:36: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+9e8cd72
