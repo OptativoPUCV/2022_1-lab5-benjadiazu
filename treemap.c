@@ -47,7 +47,7 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
     TreeNode *aux;
-    searchTreeMap(tree,key);
+    //searchTreeMap(tree,key);
     aux = tree->current;
     TreeNode *nuevoNodo = createTreeNode(key,value);
   
@@ -161,29 +161,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    TreeNode *aux;
-    TreeNode *UB;
-    searchTreeMap(tree,key);
-
-    aux = tree->current->parent;
-    UB = tree->current;
-  
-    printf("key: %d\n", *(int*)key );
-    printf("UB (current): %d\n", *(int*)UB->pair->key );
-    printf("aux (parent del current): %d\n", *(int*)aux->pair->key );
-
-    if (is_equal(tree,UB->pair->key,key)){
-        return UB->pair;
-    }
-    if (tree->lower_than(key,UB->pair->key) == 1){
-        return UB->pair;
-    }
-    else if(tree->lower_than(UB->pair->key,key) == 1){
-        UB = aux;
-        return UB->pair;
-    }
-
-    return NULL;
+    
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
