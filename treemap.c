@@ -168,11 +168,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
     aux = tree->current->parent;
     UB = tree->current;
   
-    
-    while (UB->pair != NULL){
-      printf("key: %d\n", *(int*)key );
-      printf("UB (current): %d\n", *(int*)UB->pair->key );
-      printf("aux (parent del current): %d\n", *(int*)aux->pair->key );
+    printf("key: %d\n", *(int*)key );
+    printf("UB (current): %d\n", *(int*)UB->pair->key );
+    printf("aux (parent del current): %d\n", *(int*)aux->pair->key );
+
 
     return NULL;
 }
