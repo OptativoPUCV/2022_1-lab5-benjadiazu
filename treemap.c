@@ -161,6 +161,21 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
+    TreeNode *UB = tree->root;
+    TreeNode *auxUB = tree->root;
+
+    while (UB != NULL){
+        if (tree->lower_than(key,UB->pair->key) == 1){
+            UB = UB->left;
+            auxUB = UB;
+        }
+        else if (tree->lower_than(UB->pair->key,key) == 1){
+            UB = UB->right;
+            auxUB = UB;
+        }
+        printf("key: %d\n", *(int*)UB->pair->key );
+    }
+  
     return NULL;
 }
 
