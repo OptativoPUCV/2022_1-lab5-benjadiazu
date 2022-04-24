@@ -2114,3 +2114,9 @@ treemap.c:175:17: error: cast from pointer to integer of different size [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 e8d98f4
+Sun Apr 24 06:13:44 UTC 2022: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  28|1
+total_score: 65/70
+b142f9f
